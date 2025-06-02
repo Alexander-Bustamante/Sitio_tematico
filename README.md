@@ -27,5 +27,4 @@ Visualizar un juego Indie.
 - **Frontend:** HTML5, CSS3
 
 ---
-
-## Estructura del proyecto
+ok
