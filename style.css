@@ -67,6 +67,10 @@ body {
     width: 25vh;
 }
 
+.nav section h2:hover{
+    transform: scale(1.1);
+}
+
 .nav section ul {
     list-style: none;
 }
@@ -161,16 +165,17 @@ body {
 /* Proporciones */
 .mediana {
     flex: 3;
-    background-color: #8ccce4;
+    background-color: #8ccde485;
     display: flex;
     align-items: center;
+    text-align: justify;
     justify-content: center;
     flex-direction: column;
 }
 
 .pequena_prota {
     flex: 1;
-    background-color: #bca4d4;
+    background-color: #bca4d485;
     background-image: url(img/Celeste_character_Madeline_sin_fondo.png);
     background-size: cover;  
     transition: background-image 0.5s ease;
@@ -183,7 +188,7 @@ body {
 }
 
 .info-2{
-    flex: 2;
+    flex: 1;
     display: flex;
     flex-wrap: wrap;
     gap: 2vh;
@@ -196,46 +201,96 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 30vh;
+    height: 25vh;
+    background-image: url(img/goty_icon.png);
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s ease;
+}
+
+.logro:hover{
+    background-image: url(img/goty_text.png);
+    background-size: cover;
+    background-position-y: -15.5vh;
 }
 
 .puntuaciones{
     flex: 2;
     background-color: #8ccde400;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    height: 30vh;
+    height: 25vh;
     padding: 0;
     box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);
+    border: solid #548cac;
+    object-fit: cover;
 }
 
 .puntuacion{
     flex: 1;
     height: 10vh;
-    width: 25vh;
+    width: 20vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
     background-color: #8ccde400;
     box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);
 }
 
 .juegos_goty{
-    flex: 2;
+    flex: 3;
     background-color: #8ccde400;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    height: 30vh;
+    height: 25vh;
     padding: 0;
-    gap: 2vh;
     box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);
     text-align: justify;
+    border: solid #548cac;
 }
 
 .juego_goty{
-    padding: 0 7vh;
+    padding: 0 4vh;
     flex: 1;
     height: 10vh;
-    width: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #8ccde400;
     box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);
-    font-size: 2.1vh;
+    font-size: 2.3vh;
+    object-fit: cover;
 }
 
+.info-3{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4vh;
+}
+
+.curiosidad{
+    flex: 1;
+    background-image: url(img/luz_encendida.png);
+    transition: background-image 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.curiosidad p{
+    font-size: 2.5vh
+}
+
+.curiosidad:hover{
+    background-image: url(img/luz_apagada.png);
+}
