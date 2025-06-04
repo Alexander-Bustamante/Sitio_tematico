@@ -113,6 +113,7 @@ body {
     flex: 4;
     padding: 30px;
     background-image: url(img/celeste-main-menu.PNG);
+    background-size: cover;
 }
 
 .info-1{
@@ -127,6 +128,7 @@ body {
 .galeria {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     gap: 15px;
     margin-top: 20px;
 }
@@ -136,30 +138,104 @@ body {
 }
 
 .tarjeta {
-    padding: 30px;
+    padding: 0 10vh;
+    height: 25vh;
     border-radius: 10px;
     background-color: #fff;
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    font-size: 3vh;
+    font-weight: bolder;
+    color: #fff;
+}
+
+.tarjeta p {
+    font-size: 2vh;
 }
 
 .tarjeta:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 /* Proporciones */
-.grande {
-    flex: 3;
-    background-color: #ffd54f;
-}
-
 .mediana {
-    flex: 2;
-    background-color: #4fc3f7;
+    flex: 3;
+    background-color: #8ccce4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.pequeña {
+.pequena_prota {
     flex: 1;
-    background-color: #81c784;
+    background-color: #bca4d4;
+    background-image: url(img/Celeste_character_Madeline_sin_fondo.png);
+    background-size: cover;  
+    transition: background-image 0.5s ease;
 }
+
+.pequena_prota:hover{
+    background-color: #ffffff00;
+    background-image: url(img/Celeste_character_Madeline_con_fondo.png);
+    background-size: cover;
+}
+
+.info-2{
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vh;
+}
+
+.logro{
+    flex: 1;
+    background-color: #8ccce4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 30vh;
+}
+
+.puntuaciones{
+    flex: 2;
+    background-color: #8ccde400;
+    display: flex;
+    flex-wrap: wrap;
+    height: 30vh;
+    padding: 0;
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);
+}
+
+.puntuacion{
+    flex: 1;
+    height: 10vh;
+    width: 25vh;
+    background-color: #8ccde400;
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);
+}
+
+.juegos_goty{
+    flex: 2;
+    background-color: #8ccde400;
+    display: flex;
+    flex-wrap: wrap;
+    height: 30vh;
+    padding: 0;
+    gap: 2vh;
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+}
+
+.juego_goty{
+    padding: 0 7vh;
+    flex: 1;
+    height: 10vh;
+    width: 45vh;
+    background-color: #8ccde400;
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);
+    font-size: 2.1vh;
+}
+
