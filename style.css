@@ -5,6 +5,20 @@
     transition: 0.3s ease;
 }
 
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #548cac00;        
+}
+
+*::-webkit-scrollbar-thumb{
+    background-color: #548cac;
+    border-radius: 15px;
+    border: 3px solid #548cac00;
+}
+
 body {
     font-family: 'Segoe UI', sans-serif;
     background-color: #f2f4f8;
@@ -27,6 +41,7 @@ body {
     flex-direction: column;
     justify-content: center;
     transition: 0.3s ease;
+    position: fixed;
 }
 
 .nav:hover{
@@ -43,7 +58,7 @@ body {
 
 .nav section{
     opacity: 0%;
-    padding: 20vh 5vh;
+    padding: 20vh 10vh;
 }
 
 .nav section:hover{
@@ -118,6 +133,8 @@ body {
     padding: 30px;
     background-image: url(img/celeste-main-menu.PNG);
     background-size: cover;
+    height: 100%;
+    margin-left: 70px;
 }
 
 .info-1{
@@ -171,6 +188,7 @@ body {
     text-align: justify;
     justify-content: center;
     flex-direction: column;
+    overflow: scroll;
 }
 
 .pequena_prota {
@@ -206,6 +224,7 @@ body {
     background-size: cover;
     background-position: center;
     transition: background-image 0.5s ease;
+    overflow: scroll;
 }
 
 .logro:hover{
@@ -226,6 +245,7 @@ body {
     box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);
     border: solid #548cac;
     object-fit: cover;
+    overflow: scroll;
 }
 
 .puntuacion{
@@ -253,6 +273,7 @@ body {
     box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);
     text-align: justify;
     border: solid #548cac;
+    overflow: scroll;
 }
 
 .juego_goty{
@@ -285,6 +306,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: justify;
+    overflow: auto;
 }
 
 .curiosidad p{
