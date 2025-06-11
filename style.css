@@ -1,3 +1,4 @@
+/* FORMATEO Y CONFIGURACIONES GLOBALES */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,6 +6,7 @@
     transition: 0.3s ease;
 }
 
+/* ESTILOS PARA SCROLLBAR */
 *::-webkit-scrollbar {
     width: 12px;
 }
@@ -19,17 +21,21 @@
     border: 3px solid #548cac00;
 }
 
+/* ESTILOS GENERALES DEL BODY */
 body {
     font-family: 'Segoe UI', sans-serif;
     background-color: #f2f4f8;
 }
 
+/* CONTENEDOR PRINCIPAL */
 .contenedor {
     display: flex;
     height: 100vh;
 }
 
-/* NAV */
+/* ---------------------- */
+/* ESTILOS DE LA BARRA LATERAL (NAV) */
+/* ---------------------- */
 .nav {
     background: linear-gradient(180deg,rgba(62, 42, 96, 1) 35%, rgba(71, 124, 206, 1) 100%);
     color: white;
@@ -44,6 +50,7 @@ body {
     position: fixed;
 }
 
+/* Efecto hover para expandir la barra lateral */
 .nav:hover{
     background: linear-gradient(180deg,rgba(62, 42, 96, 1) 35%, rgba(71, 124, 206, 1) 100%);
     color: white;
@@ -56,6 +63,7 @@ body {
     justify-content: center;
 }
 
+/* Contenido de la barra lateral */
 .nav section{
     opacity: 0%;
     padding: 20vh 10vh;
@@ -70,6 +78,7 @@ body {
     opacity: 100%;
 }
 
+/* Estilos para el título/logo */
 .nav section h2 {
     margin-bottom: 20px;
     display: flex;
@@ -86,6 +95,7 @@ body {
     transform: scale(1.1);
 }
 
+/* Estilos para la lista de navegación */
 .nav section ul {
     list-style: none;
 }
@@ -116,6 +126,7 @@ body {
     width: 6vh;
 }
 
+/* Efectos hover para elementos de navegación */
 .nav section li:hover {
     color: #ffd54f;
 }
@@ -127,7 +138,9 @@ body {
     transform: translateX(2vh);
 }
 
-/* CONTENIDO */
+/* ---------------------- */
+/* ESTILOS DEL CONTENIDO PRINCIPAL */
+/* ---------------------- */
 .contenido {
     flex: 4;
     padding: 30px;
@@ -137,15 +150,7 @@ body {
     margin-left: 70px;
 }
 
-.info-1{
-    flex: 1;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-
+/* Galería y contenedores de información */
 .galeria {
     display: flex;
     flex-wrap: wrap;
@@ -158,6 +163,7 @@ body {
     color: white;
 }
 
+/* Estilos base para tarjetas */
 .tarjeta {
     padding: 0 10vh;
     height: 25vh;
@@ -179,7 +185,19 @@ body {
     transform: scale(1.03);
 }
 
-/* Proporciones */
+/* ---------------------- */
+/* ESTILOS PARA SECCIÓN INFO-1 (Protagonista e historia) */
+/* ---------------------- */
+.info-1{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Tarjeta mediana (historia del juego) */
 .mediana {
     flex: 3;
     background-color: #8ccde485;
@@ -191,6 +209,7 @@ body {
     overflow: scroll;
 }
 
+/* Tarjeta pequeña (protagonista) */
 .pequena_prota {
     flex: 1;
     background-color: #bca4d485;
@@ -205,6 +224,9 @@ body {
     background-size: cover;
 }
 
+/* ---------------------- */
+/* ESTILOS PARA SECCIÓN INFO-2 (Premios y puntuaciones) */
+/* ---------------------- */
 .info-2{
     flex: 1;
     display: flex;
@@ -212,6 +234,7 @@ body {
     gap: 2vh;
 }
 
+/* Tarjeta de logros */
 .logro{
     flex: 1;
     background-color: #8ccce4;
@@ -233,6 +256,7 @@ body {
     background-position-y: -15.5vh;
 }
 
+/* Contenedor de puntuaciones */
 .puntuaciones{
     flex: 2;
     background-color: #8ccde400;
@@ -248,6 +272,7 @@ body {
     overflow: scroll;
 }
 
+/* Tarjetas individuales de puntuación */
 .puntuacion{
     flex: 1;
     height: 10vh;
@@ -261,6 +286,7 @@ body {
     box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);
 }
 
+/* Contenedor de juegos GOTY */
 .juegos_goty{
     flex: 3;
     background-color: #8ccde400;
@@ -276,6 +302,7 @@ body {
     overflow: scroll;
 }
 
+/* Tarjetas individuales de juegos GOTY */
 .juego_goty{
     padding: 0 4vh;
     flex: 1;
@@ -289,6 +316,9 @@ body {
     object-fit: cover;
 }
 
+/* ---------------------- */
+/* ESTILOS PARA SECCIÓN INFO-3 (Curiosidades) */
+/* ---------------------- */
 .info-3{
     flex: 1;
     display: flex;
@@ -297,6 +327,7 @@ body {
     gap: 4vh;
 }
 
+/* Tarjetas de curiosidades */
 .curiosidad{
     flex: 1;
     background-image: url(img/luz_encendida.png);
